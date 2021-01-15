@@ -1,0 +1,106 @@
+/* MAIN */
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    margin-top: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* CONTENT ON TOP OF GAME BOARD */
+.contentOnTop {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 35%;
+}
+.hidden {
+    display: none;
+}
+button {
+    cursor: pointer;
+    color: #2c3e50;
+    background: white;
+    border: solid 2px #2c3e50;
+    padding: 6px 18px;
+    border-radius: 2px;
+    font-size: 21px;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px 0px #0000005c;
+}
+button:focus {
+    box-shadow: inset 3px 3px 2px 0px #0000005c;
+}
+.gameLostContent {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 3px;
+    border: 2px solid #2c3e50;
+}
+.youLost {
+    color: #ff7979;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* GAME BOARD */
+table {
+    margin: 50px auto;
+    border-spacing: 15px;
+}
+
+td {
+    border: 2px solid #B0BEC5;
+    border-radius: 5px;
+}
+
+.fruit {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-image: url(../assets/OClockLogo.png);
+    background-size: cover;
+}
+
+.card[data-status="visible"] .fruit,
+.card[data-status="won"] .fruit,
+.card[data-status="wrong"] .fruit {
+    background-image: url(../assets/cards.png);
+}
+
+.card[data-status="won"] {
+    border-color: #0ac3a7;
+}
+.card[data-status="wrong"] {
+    border-color: #e49595;
+}
+
+.card[data-clickable] {
+    cursor: pointer;
+}
+
+/* PROGRESS BAR */
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.barStatus {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #ff7979;
+}
