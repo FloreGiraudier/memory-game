@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Memory</title>
+</head>
+
+<body>
+    <h1>Mémory</h1>
+
+    <span id="timer">0:00</span>
+    <div class="scoreboard">
+        <h2>Best scores :</h2>
+        <div id="scoresTable"></div>
+    </div>
+
+    <!-- the table is generated in js: this DOM element wil be dynamically turned into our game board -->
+    <!-- see function createTable() in js/createTable.js -->
+    <div class="table"></div>
+
+    <!-- <progress> is a semantic element in HTML5 -->
+    <!-- Using semantic markup is important !-->
+    <progress id="progressBar"></progress>
+
+    <div class="contentOverlay">
+        <button type="button" id="startButton">Start Game</button>
+        <div class="gameWonContent hidden">
+            <div class="message">Bravo !!</div>
+            <div class="time"></div>
+            <button type="button" class="restartButton">Restart</button>
+        </div>
+        <div class="gameLostContent hidden">
+            <div class="message">Perdu !!</div>
+            <button type="button" class="restartButton">Restart</button>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

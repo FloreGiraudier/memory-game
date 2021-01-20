@@ -1,8 +1,23 @@
 {
+  "type": "module",
   "devDependencies": {
-    "browser-sync": "^2.26.13"
+    "browser-sync": "^2.26.13",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
   },
   "scripts": {
-      "start": "node start.js"
+    "start": "node start.js",
+    "get-scores": "node --experimental-top-level-await ./backend/script/getScores.js",
+    "get-best-scores": "node --experimental-top-level-await ./backend/script/getBestScores.js",
+    "fill-scores": "node ./backend/script/fillScores.js",
+    "clear-scores": "node ./backend/script/clearScores.js"
+  },
+  "dependencies": {
+    "@jsenv/server": "^5.4.2",
+    "eslint": "^7.18.0",
+    "mysql": "^2.18.1",
+    "prettier": "^2.2.1"
   }
 }

@@ -1,0 +1,52 @@
+.contentOverlay {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 35%;
+}
+.hidden {
+    display: none;
+}
+button {
+    cursor: pointer;
+    color: #2c3e50;
+    background: white;
+    border: solid 2px #2c3e50;
+    padding: 6px 18px;
+    border-radius: 2px;
+    font-size: 21px;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px 0px #0000005c;
+}
+button:focus {
+    box-shadow: inset 3px 3px 2px 0px #0000005c;
+}
+.gameLostContent,
+.gameWonContent {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 3px;
+    border: 2px solid #2c3e50;
+}
+.message {
+    color: #ff7979;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.time {
+    margin-bottom: 20px;
+}
+
+#timer {
+    position: absolute;
+    right: 100px;
+    font-size: 22px;
+    border: 2px solid #2c3e50;
+    padding: 7px 19px;
+    border-radius: 30px;
+}

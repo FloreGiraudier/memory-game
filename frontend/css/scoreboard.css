@@ -1,0 +1,30 @@
+.scoreboard {
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#scoresTable {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.scoreboard ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.scoreboard li span {
+    background: #0ac3a7;
+    color: #fffdd8;
+    padding: 3px;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 10px 5px 0;
+}

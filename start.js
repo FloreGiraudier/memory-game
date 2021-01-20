@@ -1,8 +1,5 @@
-// configure BrwserSync to have live-reloading while coding
-var browserSync = require("browser-sync").create();
+// start the frontend server (static server that serves frontend files)
+import('./start-frontend-server.js')
 
-browserSync.init({
-    server: "./src",
-    // as soon as afile is modified in src, the browser will reload the page
-    files: "./src/**/*"
-});
+// start the backend server (server interfacing frontend with the database)
+import('./start-backend-server.js')

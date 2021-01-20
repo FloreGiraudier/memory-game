@@ -1,0 +1,34 @@
+progress {
+    /* Reset the default appearance of progress element*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of default border in Firefox. */
+    border: none;
+
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    display: block;
+    color: #2c3e50;
+}
+/* WebKit/Blink (Chrome/Safari/Opera) provides two pseudo classes to style the progress element: */
+/* -webkit-progress-bar and -webkit-progress-value */
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+    background: #ff7979;;
+    border-radius: 2px; 
+}
+/* Firefox provides a single pseudo class (-moz-progress-bar) we can use to target the progress bar value. 
+   We cannot style the background of the container in Firefox. */
+progress::-moz-progress-bar {
+    background: #ff7979;;
+    border-radius: 2px; 
+}
